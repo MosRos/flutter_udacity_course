@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:udacity_sample/category_route.dart';
+import 'package:udacity_sample/input_currency.dart';
 
 void main() => runApp(UnitConverterApp());
 
@@ -40,7 +41,7 @@ class UnitConverterApp extends StatelessWidget {
       color: Colors.green,
       debugShowCheckedModeBanner: false,
       title: 'Unit Converter',
-      home: CategoryRoute(),
+      home: InputCurrency(),
     );
   }
 }
