@@ -2,7 +2,8 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:udacity_sample/category.dart';
+import 'package:udacity_sample/2_category/category.dart';
+import 'package:udacity_sample/2_category/category_widget.dart';
 
 
 final _backgroundColor = Colors.green[100];
@@ -50,10 +51,10 @@ class CategoryRoute extends StatelessWidget {
     final listView = ListView.builder(
         itemCount: _categoryNames.length,
         itemBuilder: (context, index) {
-          return Category(
-            name: _categoryNames[index],
-            color: _baseColors[index],
-            iconLocation: _icons[index],
+          return CategoryWidget(category:  new Category(
+              name: _categoryNames[index],
+              color: _baseColors[index],
+              iconLocation: _icons[index])
           );
         });
     final appBar = AppBar(

@@ -1,37 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:udacity_sample/1_rectangle/rectangle.dart';
+import 'package:udacity_sample/2_category/simple_category_app.dart';
 import 'package:udacity_sample/category_route.dart';
 import 'package:udacity_sample/input_currency.dart';
 
-void main() => runApp(UnitConverterApp());
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.blue,
-      ),
-//      home : MyHomePage(title: 'Flutter Demo Home Page',)
-    home: Scaffold(
-      appBar: AppBar(
-          title: Text('Hello World')
-      ),
-      body: HelloRectangle(),
-    ),
-    );
-  }
-}
+void main() => runApp(SimpleCategoryApp());
 
 class UnitConverterApp extends StatelessWidget {
 
@@ -42,27 +15,6 @@ class UnitConverterApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Unit Converter',
       home: InputCurrency(),
-    );
-  }
-}
-
-class HelloRectangle extends StatelessWidget {
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        color: Colors.greenAccent,
-        height: 300.0,
-        width: 400.0,
-        child: Center(
-          child: Text(
-            'Hello',
-            style: TextStyle(fontSize: 40.0),
-            textAlign: TextAlign.center,
-          ),
-        ),
-      ),
     );
   }
 }

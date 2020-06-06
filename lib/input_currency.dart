@@ -48,7 +48,7 @@ class InputCurrencyState extends State<InputCurrency> {
   Unit _fromValue;
   Unit _toValue;
   double _inputValue = 0.0;
-  String _convertedValue;
+  String _convertedValue = "0.0";
   Unit selectedUnit = defaultUnits[0];
   List<DropdownMenuItem> _unitMenuItems;
   List<Unit> units = defaultUnits;
