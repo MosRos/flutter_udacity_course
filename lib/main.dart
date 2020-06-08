@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:udacity_sample/1_rectangle/rectangle.dart';
 import 'package:udacity_sample/2_category/simple_category_app.dart';
-import 'package:udacity_sample/category_route.dart';
+import 'package:udacity_sample/3_category_list/static_list_app.dart';
 import 'package:udacity_sample/input_currency.dart';
 
-void main() => runApp(SimpleCategoryApp());
+void main() => runApp(StaticListApp());
 
 class UnitConverterApp extends StatelessWidget {
 
